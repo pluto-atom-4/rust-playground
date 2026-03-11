@@ -4,7 +4,9 @@ use rand::prelude::thread_rng;
 use rand::Rng;
 
 fn main() {
-    let t = true;
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
 
-    let f: bool = false; // with explicit type annotation
+    let (_x, y, _z) = tup;
+
+    print!("The value of y is: {}", y);
 }
