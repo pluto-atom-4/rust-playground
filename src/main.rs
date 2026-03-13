@@ -4,13 +4,11 @@ use rand::prelude::thread_rng;
 use rand::Rng;
 
 fn main() {
-    let tup = (500, 6.4, 1);
+    let  a = [1,2,3,4,5];
 
-    let five_hundred = tup.0;
-    let six_point_four = tup.1;
-    let one  = tup.2;
-
-    println!("The value of five_hundred is: {}", five_hundred);
-    println!("The value of six_point_four is: {}", six_point_four);
-    println!("The value of one is: {}", one);
+    println!("The first element of the array is: {}", a[0]);
+    println!("The second element of the array is: {}", a[1]);
+    println!("The third element of the array is: {}", a[2]);
+    println!("The fourth element of the array is: {}", a[3]);
+    println!("The fifth element of the array is: {}", a[4]);
 }
