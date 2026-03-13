@@ -4,7 +4,7 @@ use rand::prelude::thread_rng;
 use rand::Rng;
 
 fn main() {
-    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    let a= [3; 5];
 
-    println!("The array is: {:?}", a);
+    println!("The array is: {:?}", a); // The array is: [3, 3, 3, 3, 3]
 }
