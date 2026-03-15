@@ -3,12 +3,13 @@ use std::io;
 use rand::prelude::thread_rng;
 use rand::Rng;
 
-fn main() {
-    let y = {
-        let x = 3;
-        x + 1    // The value of x is not accessible here, but the value of y is still 4
-        // no semicolon at the end of this line, so this expression will be returned as the value of y
-    };
 
-    println!("The value of y is {y}");
+fn five() -> i32 {
+    5 // This is an expression, not a statement, so it will return a value.
+}
+
+fn main() {
+    let x = five();
+
+    println!("The value of x is: {x}");
 }
