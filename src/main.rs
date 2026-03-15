@@ -4,12 +4,12 @@ use rand::prelude::thread_rng;
 use rand::Rng;
 
 
-fn five() -> i32 {
-    5 // This is an expression, not a statement, so it will return a value.
-}
-
 fn main() {
-    let x = five();
+    let x = plus_one(5);
 
     println!("The value of x is: {x}");
+
+}
+fn plus_one(x: i32) -> i32 {
+    x + 1
 }
