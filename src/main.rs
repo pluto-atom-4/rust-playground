@@ -6,7 +6,7 @@ use rand::Rng;
 
 fn main() {
     let condition = true;
-    let number = if condition { 5 } else { 6 }; // no semicolon at the end of the line, otherwise it will be treated as a statement and not an expression
+    let number = if condition { 5 } else { "six" }; // this will cause a compile error because the types of the two branches are different
 
     println!("The value of number is: {number}");
 }
