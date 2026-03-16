@@ -5,10 +5,8 @@ use rand::Rng;
 
 
 fn main() {
-    let number = 7;
-    if number < 5 {
-        println!("condition was true");
-    } else {
-        println!("condition was false");
+    let number = 3;
+    if number { // This will cause a compile-time error because `number` is an integer, not a boolean.
+        println!("condition was three");
     }
 }
