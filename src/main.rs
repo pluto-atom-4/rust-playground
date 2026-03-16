@@ -5,11 +5,5 @@ use rand::Rng;
 
 
 fn main() {
-    let x = plus_one(5);
-
-    println!("The value of x is: {x}");
-
-}
-fn plus_one(x: i32) -> i32 {
-    x + 1
+    let lucky_number = 7; // I'm, feeling lucky today
 }
