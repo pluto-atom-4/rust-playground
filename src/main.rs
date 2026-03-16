@@ -5,6 +5,10 @@ use rand::Rng;
 
 
 fn main() {
-    // I'm feeling lucky today
-    let lucky_number = 7;
+    let number = 3;
+    if number < 5 {
+        println!("condition was true");
+    } else {
+        println!("condition was false");
+    }
 }
