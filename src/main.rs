@@ -5,6 +5,8 @@ use rand::Rng;
 
 
 fn main() {
-    // I'm feeling lucky today
-    let lucky_number = 7;
+    for number in (1..4).rev() {
+        println!("{number}!");
+    }
+    println!("LIFTOFF!!!");
 }
