@@ -5,15 +5,24 @@ use rand::Rng;
 
 
 fn main() {
-    let mut counter = 0;
+    let mut count = 0;
+    // The 'countring_up label allows us to break out of the outer loop from within the inner loop.
+    'countring_up: loop {
+        println!("count = {count}");
+        let mut remaining = 10;
 
-    let result = loop {
-        counter += 1;
-
-        if counter == 10 {
-            break counter * 2;
+        loop {
+            println!("remaining = {remaining}");
+            if remaining == 9 {
+                break;
+            }
+            if count == 2 {
+                break 'countring_up;
+            }
+            remaining -= 1;
         }
-    };
 
-    println!("The result is {result}");
+        count += 1;
+    }
+    println!("End count = {count}");
 }
