@@ -5,8 +5,8 @@ use rand::Rng;
 
 
 fn main() {
-    let mut s = String::from("hello");
-    s = String::from("ahoy"); // The original string immediately goes out of scope
+    let s1 = String::from("hello");
+    let s2 = s1.clone(); // The heap data does get copied
 
-    println!("{s}, world!");  // print ahoy, world!
+    println!("s1 = {s1}, s2 = {s2}");
 }
