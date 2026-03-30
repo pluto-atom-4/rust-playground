@@ -5,8 +5,8 @@ use rand::Rng;
 
 
 fn main() {
-    let s1 = String::from("hello");
-    let s2 = s1;
-    
-    println!("{s1}, world!");  // Rust consider `s1` as no longer valid.
+    let mut s = String::from("hello");
+    s = String::from("ahoy"); // The original string immediately goes out of scope
+
+    println!("{s}, world!");  // print ahoy, world!
 }
